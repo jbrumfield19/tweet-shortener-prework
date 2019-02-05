@@ -4,7 +4,7 @@ end
 def word_substituter(tweet_one)
    substitutes = dictionary
   og_words = tweet_one.split
-    og_words.collect! do |word|
+    og_words.collect do |word|
       lowercased = word.downcase
       if substitutes.keys.include? lowercased
         substitutes[lowercased]
